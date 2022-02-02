@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>MEMDOR</author>
+
+    <version>1.0.1.0</version>
+	
+    <title>
+        <en>KK 3018/27 H Auto-Load.</en>
+        <de>KK 3018/27 H Auto-Lader.</de>
+        <fr>KK 3018/27 H Chargement Automatique.</fr>
+        <it>KK 3018/27 H Caricatore Automatico.</it>
+    </title>
+	
+    <description>
+        <en> <![CDATA[
+For the function of pallet autoloader Achimobil "Pallet Autoloader Specialization" is required.
+
+KK 3018/27 H small car trailer with pallet autoloader function facilitates your work with productions and numerous pallets. 
+
+Up to 12 euro pallets can be transported with one tour. 
+
+Euro pallets, liquid tanks, BigBag pallets, cotton round bales and oversized Euro pallets can be loaded by the pallet autoloader specialization.
+
+Changelog V 1.0.1.0
+- Tested with TestRunner_public (GIANTS). (Error free!)
+- Icon image added
+- Description adjusted
+- Dependencies "Pallet Autoloader Specialization" from Achimobil needed.
+            ]]>
+        </en>
+
+        <de> <![CDATA[
+Für die Funktion des Paletten-Autoloader wird die „Paletten Autoloader Spezialisierung“ von Achimobil benötigt.
+
+KK 3018/27 H kleiner Auto Anhänger mit Paletten-Autoloader Funktion erleichter Ihnen die Arbeit mit den Produktionen und den zahlreichen Paletten. 
+
+Bis zu 12 Euro-Paletten können mit einer Tour transportiert werden. 
+
+Euro-Paletten,  Flüssigkeitstanks, BigBag Paletten, Baumwolle Rundballen und übergroße Euro-Paletten können von der Paletten Autoloader Spezialisierung geladen werden.
+
+Changelog V 1.0.1.0
+- Getestet mit TestRunner_public (GIANTS). (Fehlerfrei!)
+- Icon Bild hinzugefügt
+- Beschreibung angepasst
+- Abhängigkeiten  „Paletten Autoloader Spezialisierung“ von Achimobil benötigt.
+            ]]>
+        </de>
+
+        <fr> <![CDATA[
+Pour la fonction autochargeur de palettes, la "spécialisation autochargeur de palettes" d'Achimobil est nécessaire.
+
+KK 3018/27 H petite remorque auto avec fonction autochargeuse de palettes vous facilite le travail avec les productions et les nombreuses palettes. 
+
+Jusqu'à 12 euro-palettes peuvent être transportées en une seule tournée. 
+
+Les palettes Euro, les citernes de liquide, les palettes BigBag, les balles rondes de coton et les palettes Euro surdimensionnées peuvent être chargées par la spécialisation Palettes Autoloader.
+
+Changelog V 1.0.1.0
+- Testé avec TestRunner_public (GIANTS). (sans bugs !)
+- Ajout d'une image d'icône
+- Description adaptée
+- Dépendances "Spécialisation de l'autochargeur de palettes" d'Achimobil nécessaires.
+            ]]>
+        </fr>
+
+        <it> <![CDATA[
+La "Specializzazione Pallet Autoloader" di Achimobil è necessaria per la funzione Pallet Autoloader.
+
+KK 3018/27 H piccolo rimorchio per auto con funzione di caricatore automatico di pallet vi facilita il lavoro con produzioni e numerosi pallet. 
+
+Con un giro si possono trasportare fino a 12 europallet. 
+
+Gli europallet, i serbatoi di liquidi, i pallet BigBag, le balle rotonde di cotone e gli europallet sovradimensionati possono essere caricati dalla specializzazione del caricatore automatico di pallet.
+
+Changelog V 1.0.1.0
+- Testato con TestRunner_public (GIANTS). (Senza errori!)
+- Immagine dell'icona aggiunta
+- Descrizione adattata
+- Dipendenze "Specializzazione Pallet Autoloader" di Achimobil necessarie.
+            ]]>
+        </it>
+    </description>
+
+    <iconFilename>icon_kk301827H.png</iconFilename>
+
+    <multiplayer supported="true" />
+	
+    <storeItems>
+        <storeItem xmlFilename="kk301827H.xml"/>
+    </storeItems>
+
+    <dependencies>
+        <dependency>FS22_aPalletAutoLoader</dependency>
+    </dependencies>
+
+    <brands>
+        <brand name="MEMDOR" title="MEMDOR" image="brand.icon.dds"/>
+    </brands>
+
+	<vehicleTypes>
+		<type name="PalletAutoLoaderCarTrailer" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<!-- <specialization name="tensionBelts"/> -->
+			<specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+		</type>
+	</vehicleTypes>	
+		
+	<l10n>
+		<text name="function_PalletAutoload_Trailer"> 
+			<en>Trailer with Autoload for pallets.</en> 
+			<de>Anhänger mit Autoload für verschiedene Paletten.</de> 
+			<fr>Remorque avec chargement automatique pour palettes.</fr>
+            <it>Rimorchio con caricamento automatico per pallet.</it>
+		</text>
+		<text name="type_PalletAutoload_Car_Trailer"> 
+			<en>Pallet Autoload</en>
+			<de>Paletten Autoloader</de>
+			<fr>Chargement automatique des palettes</fr>
+            <it>Caricamento automatico di pallet</it>
+		</text>
+		<text name="unit_PalletAutoload_Car_Trailer"> 
+			<en>Pallet</en>
+			<de>Paletten</de>
+			<fr>Palettes</fr>
+            <it>Pallet</it>
+		</text>
+	</l10n>
+	
+</modDesc>
